@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>&#35441;&#38988;&#12497;&#12493;&#12523;</title>
+  <link rel="stylesheet" href="./topic-panel-app.css?v=3">
+</head>
+<body>
+  <main class="app" data-theme="green" data-chromakey="false">
+    <section class="stage" aria-label="&#34920;&#31034;&#12456;&#12522;&#12450;">
+      <button class="stage-roulette" id="rouletteTopic" type="button">&#12523;&#12540;&#12524;&#12483;&#12488;</button>
+      <div class="panel-list" id="panelList"></div>
+      <div class="viewer-backdrop" id="viewerBackdrop"></div>
+      <div class="viewer" id="viewer">
+        <div class="viewer-top">
+          <div class="viewer-title" id="viewerTitle"></div>
+          <button class="close-button" id="closeViewer" type="button" aria-label="&#19968;&#35239;&#12395;&#25147;&#12427;">&#10005;</button>
+        </div>
+        <div class="viewer-body">
+          <div class="viewer-scroll">
+            <div class="viewer-content" id="viewerContent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="settings" aria-label="&#35373;&#23450;&#12456;&#12522;&#12450;">
+      <div class="settings-header">
+        <h2>&#35373;&#23450;</h2>
+      </div>
+      <div class="settings-body">
+        <div class="field">
+          <label for="themeSelect">&#12459;&#12521;&#12540;&#12496;&#12522;&#12456;&#12540;&#12471;&#12519;&#12531;</label>
+          <select id="themeSelect">
+            <option value="pink">&#12500;&#12531;&#12463;</option>
+            <option value="blue">&#27700;&#33394;</option>
+            <option value="green">&#32209;</option>
+            <option value="orange">&#12458;&#12524;&#12531;&#12472;</option>
+            <option value="purple">&#32043;</option>
+            <option value="red">&#36196;</option>
+          </select>
+        </div>
+        <label class="check-field">
+          <input type="checkbox" id="chromaKeyToggle">
+          <span>&#12464;&#12522;&#12540;&#12531;&#12496;&#12483;&#12463;</span>
+        </label>
+        <label class="check-field">
+          <input type="checkbox" id="rouletteToggle" checked>
+          <span>&#12523;&#12540;&#12524;&#12483;&#12488;&#12508;&#12479;&#12531;&#12434;&#34920;&#31034;</span>
+        </label>
+        <div class="button-row">
+          <button class="action secondary" id="resetOpened" type="button">&#38283;&#23553;&#12522;&#12475;&#12483;&#12488;</button>
+          <button class="action secondary" id="resetDefault" type="button">&#21021;&#26399;&#21270;</button>
+        </div>
+        <div id="editors"></div>
+        <button class="add-card" id="addTopic" type="button" aria-label="&#35441;&#38988;&#12434;&#36861;&#21152;">+</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="./topic-panel-app.js"></script>
+</body>
+</html>
